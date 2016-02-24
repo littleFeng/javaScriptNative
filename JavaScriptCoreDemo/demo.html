@@ -1,0 +1,68 @@
+<html>
+    <header>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        
+        var s = {
+            "a":1,
+            "b":2
+        }
+        
+        function secondClick() {
+          aaa('这是一个原生的空间')
+        }
+        
+        function alertClick(){
+            alert('js传过来的数据');
+        }
+        
+        function showAlert(message){
+            log(message);
+        }
+        function closeWeb(){
+            closeWeb();
+        }
+        function changeNav(color,title){
+            changeNavBar(color,title);
+        }
+        
+            </script>
+    </header>
+    
+    <body>
+        <button type="button" style="width:200;height:80;font-Size:30px"  onclick="secondClick()">加载原生控件</button>
+    </body>
+    
+    
+    <body>
+        <br/>
+        <br/>
+        <button type="button" style="width:200;height:80;font-Size:30px"  onclick="alertClick()">原生弹窗</button>
+    </body>
+    
+    <body>
+        <br/>
+        <br/>
+        <button type="button" style="width:200;height:80;font-Size:30px"  onclick="showAlert(1232132)">log日志</button>
+    </body>
+    
+    <body>
+        <br/>
+        <br/>
+        <button type="button" style="width:200;height:80;font-Size:30px"  onclick="closeWeb()">关闭web</button>
+    </body>
+    
+    <body>
+        <br/>
+        <br/>
+        <button type="button" style="width:200;height:80;font-Size:30px"  onclick="changeNav('#FFC0CB','jsTitle')">改变导航条</button>
+    </body>
+
+    <body>
+        <br/>
+        <br/>
+        <button type="button" style="width:200;height:80;font-Size:30px"  onclick="fun(s)">传递字典</button>
+    </body>
+
+    
+</html>
